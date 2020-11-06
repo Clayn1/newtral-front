@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark p-0">
+  <button class="navbar-toggler m-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto row-cols-lg-5 w-100 text-center">
+      <li class="nav-item col-lg p-0 border-right border-secondary">
+        <a class="nav-link p-3" routerLink="/">News</a>
+      </li>
+      <li class="nav-item dropdown col-lg p-0 border-right border-secondary">
+        <a class="nav-link dropdown-toggle p-3" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+           aria-haspopup="true" aria-expanded="false">
+          List of sections
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" routerLink="politics">Politics</a>
+          <a class="dropdown-item" routerLink="sport">Sport</a>
+          <a class="dropdown-item" routerLink="nature">Nature</a>
+          <a class="dropdown-item" routerLink="gaming">Gaming</a>
+          <a class="dropdown-item" routerLink="technology">Technology</a>
+          <a class="dropdown-item" routerLink="economics">Economics</a>
+        </div>
+      </li>
+      <li class="nav-item col-lg p-0 border-right border-secondary">
+        <a class="nav-link p-3" routerLink="authors">List of authors</a>
+      </li>
+      <li class="nav-item col-lg p-0 border-right border-secondary">
+        <a class="nav-link p-3" routerLink="about">About</a>
+      </li>
+      <li class="nav-item col-lg">
+        <form class="form-inline my-2 my-lg-0 justify-content-center">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </li>
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,12 @@
+<app-carousel [posts]="posts.slice(0, 2)"></app-carousel>
+<div class="w-75 mx-auto">
+  <select name="orderBy" class="custom-select badge-dark my-3">
+    <option value="mPopular">Most Popular</option>
+    <option value="lPopular">Least Popular</option>
+    <option value="newest">Newest</option>
+    <option value="oldest">Oldest</option>
+    <option value="az">A-Z</option>
+    <option value="za">Z-A</option>
+  </select>
+</div>
+<app-popular-post *ngFor="let post of posts.slice(0, 9)" [post]="post"></app-popular-post>

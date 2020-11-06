@@ -1,0 +1,38 @@
+<div class="position-relative w-75 mx-auto mt-4" style="height: 400px">
+  <img src="{{post.post.imageURL}}" class="d-block w-100"
+       style="height: 400px; object-fit: cover; object-position: top" alt="...">
+  <div class="gradient-white">
+    <div class="bg-success" style="width: 50px; height: 50px">
+    </div>
+    <div class="d-none d-md-block">
+      <div class="text-break">
+        <h1 class="display-3 ml-3 position-absolute" style="bottom: 10px">{{post.post.title}}</h1>
+      </div>
+      <div class="bottom-align">
+        <span class="bottom-align-text"><u>{{post.username}}</u></span>
+        <div class="rounded-circle bg-dark float-right " style="width: 50px; height: 50px"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="w-75 mx-auto bg-white py-3">
+  <div class="mx-5" [innerHTML]="post.post.htmlTemplate">
+  </div>
+  <hr>
+  <div class="container ml-5">
+    <div class="form form-stacked">
+      <div class="form-block">
+        <label class="label" for="board_content">Leave your comment!</label>
+        <div class="row">
+          <textarea placeholder="Type your comment here" class="textarea-tall"
+                    id="board_content"></textarea>
+          <button class="btn btn-dark ml-2">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="container ml-5">
+    <app-comment *ngFor="let comment of comments" [comment]="comment"></app-comment>
+  </div>
+</div>

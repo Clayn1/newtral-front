@@ -1,0 +1,23 @@
+@media (min-width: 1024px){
+  .carousel-item img{
+    height: 550px;
+  }
+}
+@media (max-width: 1023px){
+  .carousel-item img{
+    height: 225px;
+  }
+}
+@media (max-width: 1023px){
+  .carousel-item img{
+    height: 225px;
+  }
+}
+
+
+.carousel{
+  box-shadow: 5px 5px 5px black;
+}
+.carousel-caption{
+  text-align: left;
+}

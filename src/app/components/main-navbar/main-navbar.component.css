@@ -1,0 +1,11 @@
+.nav-link:hover{
+  transition-duration: 0.5s;
+  background-color: darkgray;
+}
+.nav-link{
+  transition-duration: 0.5s;
+}
+.dropdown.show{
+  transition-duration: 0.5s;
+  background-color: darkgray;
+}

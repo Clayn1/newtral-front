@@ -1,0 +1,19 @@
+<div class="row my-3">
+  <a class="col-2" href="#">
+    <img class="media-object img-circle" width="100px" height="100px" src="{{comment.userImageUrl}}"
+         alt="profilePic">
+  </a>
+  <div class="media-body border-div col-10 py-2">
+    <div class="well well-lg">
+      <h4 class="media-heading text-uppercase reviews">{{comment.username}} </h4>
+      <ul class="media-date text-uppercase reviews list-inline">
+        <i>{{comment.comment.timestamp}}</i>
+      </ul>
+      <p class="media-comment">
+        {{comment.comment.commentText}}
+      </p>
+      <a class="btn btn-info btn-circle text-uppercase" href="#" id="reply"><span
+        class="glyphicon glyphicon-share-alt"></span> Reply</a>
+    </div>
+  </div>
+</div>

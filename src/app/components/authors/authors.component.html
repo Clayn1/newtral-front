@@ -1,0 +1,13 @@
+<div class="w-75 mx-auto row">
+  <div class="mx-auto col">
+    <select name="orderBy" class="custom-select badge-dark my-3">
+      <option value="mPopular">Most Popular</option>
+      <option value="lPopular">Least Popular</option>
+      <option value="newest">Newest</option>
+      <option value="oldest">Oldest</option>
+      <option value="az">A-Z</option>
+      <option value="za">Z-A</option>
+    </select>
+  </div>
+</div>
+<app-popular-author *ngFor="let userPage of userPages; let i = index" [position]="i+1" [userPage]="userPage"></app-popular-author>

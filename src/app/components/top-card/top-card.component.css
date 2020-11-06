@@ -1,0 +1,11 @@
+.bottom-align{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.bottom-align-text{
+  position: absolute;
+  bottom: 0;
+  right: 60px;
+}
+
